@@ -1,0 +1,28 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_outer_classname = "SeServiceProto";
+
+package wood.mike.se;
+
+service SecretEscapes {
+  // unary
+  rpc GetSeSale (SeSale) returns (TrSale);
+
+  // server streaming
+  rpc GetAllSeSales(SaleRangeRequest) returns (stream SeSale);
+}
+
+message SeSale {
+  string name = 1;
+  string id = 2;
+}
+
+message TrSale {
+  string name = 1;
+  string id = 2;
+}
+
+message SaleRangeRequest {
+  string start = 1;
+  string end = 2;
+}
