@@ -1,7 +1,7 @@
 Playing around with GRPC, there are few sample apps in here, the following describes setting up and running one of them
 the process is the same for the other client/server apps, just change the file names when starting.
 
-A java client exists
+Java clients exist for the greet and SE examples in here - https://github.com/leadtrip/grpc-playground
 
 ### setup
 `pip3 install grpcio-tools`
